@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "jntn-redirect",
+  "alias": [
+    "www.jntn.se"
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://jntn.se/$1"
+      }
+    }
+  ]
+}
